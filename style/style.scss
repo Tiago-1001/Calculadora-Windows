@@ -1,0 +1,146 @@
+// Váriaveis 
+
+$background: #121216;
+$white: #f4f4f4;
+$black: #1D1E1B;
+$blackTwo: #2e2e2d;
+$primary: #60b653;
+$red: #b12422;
+$gray: #53565A;
+
+// Fim das váriaveis
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: $background;
+  color: $white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 350px;
+  height: 600px;
+
+  background-color: $black;
+  border: 1px solid $blackTwo;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+
+    #title {
+      font-size: .9rem;
+      letter-spacing: .5px;
+
+      width: 55%;
+      margin: .5rem 1.5rem;
+    }
+
+    div {
+      width: 45%;
+      color: $gray;
+      height: 100%;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      text-align: center;
+
+      span {
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: default;
+
+        &:hover {
+          color: $white;
+          background-color: $blackTwo;
+        }
+
+        &:last-of-type {
+
+          &:hover {
+            background-color: $red;
+            border-top-right-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  #box-results {
+    width: 100%;
+    height: 35%;
+
+    display: flex;
+    justify-content: flex-end;
+
+    #result {
+      align-self: flex-end;
+      margin: 0 10px 40px 0;
+      
+      font-size: 3rem;
+    }
+  }
+
+  #operators {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(4, 1fr);
+
+    width: 100%;
+    height: 65%;
+
+    padding: 3px;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin: 1px;
+
+      background-color: $blackTwo;
+      border-radius: 6px;
+
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(1.2);
+      }
+
+      &:last-of-type {
+        background-color: $primary;
+
+        &:hover {
+          filter: brightness(.8);
+        }
+      }
+    }
+
+    .numbers {
+      filter: brightness(1.2);
+
+      &:hover {
+        filter: brightness(.9);
+      }
+    }
+  }
+}
