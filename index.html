@@ -15,43 +15,45 @@
     <div id="container">
       <header>
         <span id="title">Calculadora</span>
-        <div>
-          <span>--</span>
-          <span>O</span>
-          <span>X</span>
+        <div id="content-buttons">
+          <div>--</div>
+          <div>O</div>
+          <div>X</div>
         </div>
       </header>
       <div id="box-results">
-        <span id="result">0</span>
+        <span id="result"></span>
       </div>
       <div id="operators">
-        <span>%</span>
-        <span>CE</span>
-        <span>C</span>
-        <span><=</span>
-        <span>¹/x</span>
-        <span>x²</span>
-        <span>²vx</span>
-        <span>/</span>
-        <span class="numbers">7</span>
-        <span class="numbers">8</span>
-        <span class="numbers">9</span>
-        <span>*</span>
-        <span class="numbers">4</span>
-        <span class="numbers">5</span>
-        <span class="numbers">6</span>
-        <span>--</span>
-        <span class="numbers">1</span>
-        <span class="numbers">2</span>
-        <span class="numbers">3</span>
-        <span>+</span>
-        <span class="numbers">+/-</span>
-        <span class="numbers">0</span>
-        <span class="numbers">,</span>
-        <span>=</span>
+        <div>%</div>
+        <div onclick="clearResult()">CE</div>
+        <div onclick="clearResult()">C</div>
+        <div onclick="clearLastNumber()"><=</div>
+        <div>¹/x</div>
+        <div onclick="source()">x²</div>
+        <div>²vx</div>
+        <div onclick="insert('/')">/</div>
+        <div class="numbers" onclick="insert(7)">7</div>
+        <div class="numbers" onclick="insert(8)">8</div>
+        <div class="numbers" onclick="insert(9)">9</div>
+        <div onclick="insert('*')">*</div>
+        <div class="numbers" onclick="insert(4)">4</div>
+        <div class="numbers" onclick="insert(5)">5</div>
+        <div class="numbers" onclick="insert(6)">6</div>
+        <div onclick="insert('-')">--</div>
+        <div class="numbers" onclick="insert(1)">1</div>
+        <div class="numbers" onclick="insert(2)">2</div>
+        <div class="numbers" onclick="insert(3)">3</div>
+        <div onclick="insert('+')">+</div>
+        <div class="numbers">+/-</div>
+        <div class="numbers" onclick="insert(0)">0</div>
+        <div class="numbers" onclick="insert('.')">.</div>
+        <div onclick="result()">=</div>
       </div>
     </div>
   </section>
   
+
+  <script src="/index.js"></script>
 </body>
 </html>

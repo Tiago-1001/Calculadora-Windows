@@ -61,7 +61,7 @@ section {
       margin: .5rem 1.5rem;
     }
 
-    div {
+    #content-buttons  {
       width: 45%;
       color: $gray;
       height: 100%;
@@ -71,7 +71,7 @@ section {
       grid-template-rows: 1fr;
       text-align: center;
 
-      span {
+      div {
         height: 100%;
 
         display: flex;
@@ -86,7 +86,6 @@ section {
         }
 
         &:last-of-type {
-
           &:hover {
             background-color: $red;
             border-top-right-radius: 15px;
@@ -98,7 +97,7 @@ section {
 
   #box-results {
     width: 100%;
-    height: 35%;
+    height: 30%;
 
     display: flex;
     justify-content: flex-end;
@@ -106,7 +105,6 @@ section {
     #result {
       align-self: flex-end;
       margin: 0 10px 40px 0;
-      
       font-size: 3rem;
     }
   }
@@ -116,11 +114,11 @@ section {
     grid-template: repeat(6, 1fr) / repeat(4, 1fr);
 
     width: 100%;
-    height: 65%;
+    height: 70%;
 
     padding: 3px;
 
-    span {
+    div {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -128,6 +126,8 @@ section {
       margin: 1px;
 
       background-color: $blackTwo;
+      color: $white;
+      border: none;
       border-radius: 6px;
 
       cursor: pointer;
@@ -136,7 +136,7 @@ section {
         filter: brightness(1.2);
       }
 
-      &:last-of-type {
+      &:last-child {
         background-color: $primary;
 
         &:hover {
@@ -144,10 +144,10 @@ section {
         }
       }
     }
-
+    
     .numbers {
       filter: brightness(1.2);
-
+      
       &:hover {
         filter: brightness(.9);
       }
