@@ -2,11 +2,11 @@
 
 $background: #121216;
 $white: #f4f4f4;
-$black: #1D1E1B;
-$blackTwo: #2e2e2d;
-$primary: #60b653;
+$black: #202024;
+$blackTwo: #29292e;
+$primary: #04d361;
 $red: #b12422;
-$gray: #53565A;
+$gray: #595964;
 
 // Fim das váriaveis
 
@@ -59,6 +59,11 @@ section {
 
       width: 55%;
       margin: .5rem 1.5rem;
+
+      img {
+        width: 16px;
+        margin-right: .5rem;
+      }
     }
 
     #content-buttons  {
@@ -73,6 +78,7 @@ section {
 
       div {
         height: 100%;
+        
 
         display: flex;
         justify-content: center;

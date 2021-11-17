@@ -25,8 +25,8 @@ section {
 #container {
   width: 350px;
   height: 600px;
-  background-color: #1D1E1B;
-  border: 1px solid #2e2e2d;
+  background-color: #202024;
+  border: 1px solid #29292e;
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,9 +67,14 @@ section {
   margin: .5rem 1.5rem;
 }
 
+#container header #title img {
+  width: 16px;
+  margin-right: .5rem;
+}
+
 #container header #content-buttons {
   width: 45%;
-  color: #53565A;
+  color: #595964;
   height: 100%;
   display: -ms-grid;
   display: grid;
@@ -96,7 +101,7 @@ section {
 
 #container header #content-buttons div:hover {
   color: #f4f4f4;
-  background-color: #2e2e2d;
+  background-color: #29292e;
 }
 
 #container header #content-buttons div:last-of-type:hover {
@@ -144,7 +149,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   margin: 1px;
-  background-color: #2e2e2d;
+  background-color: #29292e;
   color: #f4f4f4;
   border: none;
   border-radius: 6px;
@@ -157,7 +162,7 @@ section {
 }
 
 #container #operators div:last-child {
-  background-color: #60b653;
+  background-color: #04d361;
 }
 
 #container #operators div:last-child:hover {
